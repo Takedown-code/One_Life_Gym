@@ -3,50 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="body.css" type="text/css"> <!--CSS File-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="body.css" type="text/css">
     <title>Choose Your Plan - OneLife Gym</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">OneLife Gym</div>
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i> OneLife Gym
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Choose Your Plan</h1>
-        <div class="plan-details">
-            <h2>Basic Plan</h2>
-            <p>Access to gym facilities during staffed hours.</p>
-            <p>Price: $20/month</p>
+        <h1 class="title">Choose Your Fitness Journey</h1>
+        <div class="plans-container">
+            <div class="plan-card" data-plan="basic">
+                <h2>Basic Plan</h2>
+                <div class="price">$20<span>/month</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Access during staffed hours</li>
+                    <li><i class="fas fa-check"></i> Basic equipment usage</li>
+                    <li><i class="fas fa-check"></i> Locker room access</li>
+                </ul>
+                <button class="select-plan">Select Basic</button>
+            </div>
+            <div class="plan-card" data-plan="premium">
+                <h2>Premium Plan</h2>
+                <div class="price">$50<span>/month</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                    <li><i class="fas fa-check"></i> Free group classes</li>
+                    <li><i class="fas fa-check"></i> One personal training session</li>
+                    <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                </ul>
+                <button class="select-plan">Select Premium</button>
+            </div>
+            <div class="plan-card" data-plan="vip">
+                <h2>VIP Plan</h2>
+                <div class="price">$100<span>/month</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> All Premium benefits</li>
+                    <li><i class="fas fa-check"></i> Unlimited personal training</li>
+                    <li><i class="fas fa-check"></i> VIP lounge access</li>
+                    <li><i class="fas fa-check"></i> Exclusive events access</li>
+                    <li><i class="fas fa-check"></i> Priority booking</li>
+                </ul>
+                <button class="select-plan">Select VIP</button>
+            </div>
         </div>
-        <div class="plan-details">
-            <h2>Premium Plan</h2>
-            <p>24/7 access to gym facilities, free group classes, and one personal training session per month.</p>
-            <p>Price: $50/month</p>
-        </div>
-        <div class="plan-details">
-            <h2>VIP Plan</h2>
-            <p>All benefits of the Premium Plan plus unlimited personal training sessions and access to VIP lounge.</p>
-            <p>Price: $100/month</p>
-        </div>
-        <form>
-            <label for="plan">Select Plan:</label>
-            <select id="plan" name="plan">
-                <option value="basic">Basic Plan - $20/month</option>
-                <option value="premium">Premium Plan - $50/month</option>
-                <option value="vip">VIP Plan - $100/month</option>
-            </select>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Submit</button>
+        <form id="signup-form" class="hidden">
+            <h2>Complete Your Registration</h2>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <button type="submit">Confirm Membership</button>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2023 OneLife Gym. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 OneLife Gym. All rights reserved.</p>
+        </div>
     </footer>
+
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Thank You!</h2>
+            <p>Your membership confirmation has been sent to <span id="confirm-email"></span>.</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
