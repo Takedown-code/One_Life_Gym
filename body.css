@@ -315,3 +315,15 @@ footer {
 .hidden {
     display: none;
 }
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff4500;
+}
