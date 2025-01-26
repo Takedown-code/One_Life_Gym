@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.confirmation-box {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
