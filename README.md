@@ -27,6 +27,7 @@ The OneLife Gym website provides information about our gym, membership options, 
 - **HTML5** - The structure and content of the website.
 - **CSS** - Styling for the pages (via `styles.css`, `confirmation.css` and `body.css`).
 - **JavaScript** - Smooth scrolling functionality for navigation.
+- **ChatGPT** - For problem solving and structuring.
 
 ### Setup
 
