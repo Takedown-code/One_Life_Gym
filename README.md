@@ -22,13 +22,6 @@ The OneLife Gym website provides information about our gym, membership options, 
 - **Premium Plan** - $99/month: Full gym access, unlimited sunbed use, 3 free personal training sessions, and access to group classes.
 - **Day Pass** - $10: Full gym access for one day, locker room access, and 1 sunbed session.
 
-### Technologies Used
-
-- **HTML5** - The structure and content of the website.
-- **CSS** - Styling for the pages (via `styles.css`, `confirmation.css` and `body.css`).
-- **JavaScript** - Smooth scrolling functionality for navigation.
-- **ChatGPT** - For problem solving and structuring.
-
 ### Setup
 
 To set up the website locally, follow these steps:
@@ -53,6 +46,10 @@ To set up the website locally, follow these steps:
 - **body.css** - The CSS styles for the gym's landing page.
 - **styles.css** - The CSS styles for the membership plans page.
 - **confirmation.css** - The CSS styles for the confirmation page.
+
+### AI
+
+Used for feedback, problem solving and structuring
 
 ### Author
 
