@@ -5,55 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneLife Gym - Membership Plans</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .home-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            z-index: 1000;
-        }
-    </style>
 </head>
 <body>
-    <a href="index.html" class="home-button">Home</a>
-    <div class="plans-container">
-        <div class="plan-card" data-plan="basic">
-            <h2>Basic Plan</h2>
-            <div class="price">$49<span>/month</span></div>
-            <ul class="features">
-                <li>Full gym access</li>
-                <li>Locker room access</li>
-                <li>1 free personal training session</li>
-            </ul>
-            <a href="confirmation.html" class="cta-button">Get Pass</a>
+    <div class="page-container">
+        <header></header>
+        <div class="logo">OneLife Gym</div>
+        <a href="index.html" class="home-button">Home</a>
+        <div class="plans-container">
+            <div class="plan-card" data-plan="basic">
+                <h2>Basic Plan</h2>
+                <div class="price">$49<span>/month</span></div>
+                <ul class="features">
+                    <li>Full gym access</li>
+                    <li>Locker room access</li>
+                    <li>1 free personal training session</li>
+                </ul>
+                <a href="confirmation.html" class="cta-button">Get Pass</a>
+            </div>
+            <div class="plan-card" data-plan="premium">
+                <h2>Premium Plan</h2>
+                <div class="price">$99<span>/month</span></div>
+                <ul class="features">
+                    <li>Full gym access</li>
+                    <li>Unlimited sunbed use</li>
+                    <li>3 free personal training sessions</li>
+                    <li>Access to group classes</li>
+                </ul>
+                <a href="confirmation.html" class="cta-button">Get Pass</a>
+            </div>
+            <div class="plan-card" data-plan="vip">
+                <h2>Day Pass</h2>
+                <div class="price">$10<span>/day</span></div>
+                <ul class="features">
+                    <li>Full gym access for one day</li>
+                    <li>Locker room access</li>
+                    <li>1 sunbed session</li>
+                </ul>
+                <a href="confirmation.html" class="cta-button">Get Pass</a>
+            </div>
         </div>
-        <div class="plan-card" data-plan="premium">
-            <h2>Premium Plan</h2>
-            <div class="price">$99<span>/month</span></div>
-            <ul class="features">
-                <li>Full gym access</li>
-                <li>Unlimited sunbed use</li>
-                <li>3 free personal training sessions</li>
-                <li>Access to group classes</li>
-            </ul>
-            <a href="confirmation.html" class="cta-button">Get Pass</a>
-        </div>
-        <div class="plan-card" data-plan="vip">
-            <h2>Day Pass</h2>
-            <div class="price">$10</div>
-            <ul class="features">
-                <li>Full gym access for one day</li>
-                <li>Locker room access</li>
-                <li>1 sunbed session</li>
-            </ul>
-            <a href="confirmation.html" class="cta-button">Get Pass</a>
-        </div>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Address: Mineralvägen 29, 691 45 Karlskoga</p>
+            <p>Phone: 010-722 02 50</p>
+            <p>Open 24 hours</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 OneLife Gym. All rights reserved.</p>
+        </footer>
     </div>
+
 </body>
 </html>
