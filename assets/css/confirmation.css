@@ -1,114 +1,144 @@
+/*---------------------------------------
+  Root Variables: define the core color palette
+---------------------------------------*/
 :root {
-    --primary-color: #ff4500;
-    --text-color: #333;
-    --bg-light: #f8f8f8;
-    --bg-dark: #333;
+    --primary-color: #ff4500;  /* Accent color for buttons and highlights */
+    --text-color: #333;        /* Default text color */
+    --bg-light: #f8f8f8;       /* Light background for content boxes */
+    --bg-dark: #333;           /* Dark background for footer */
 }
 
+/*---------------------------------------
+  Base Styles & Layout
+---------------------------------------*/
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;  /* Clean, readable sans-serif font */
+    line-height: 1.6;                /* Improve readability */
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    margin: 0;                       /* Remove default browser margin */
+    padding: 0;                      /* Remove default browser padding */
+    text-align: center;              /* Center text by default */
+    min-height: 100vh;               /* Ensure body fills viewport height */
+    display: flex;                   /* Enable flex layout */
+    flex-direction: column;          /* Stack header, content, footer vertically */
 }
 
+/*---------------------------------------
+  Page Container: wraps entire content
+---------------------------------------*/
 .page-container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column;          /* Header, content, footer stacked */
+    min-height: 100vh;               /* Stretch to fill viewport */
 }
 
+/*---------------------------------------
+  Content Wrapper: centers main content
+---------------------------------------*/
 .content-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    flex: 1;
+    max-width: 800px;                /* Limit width for readability */
+    margin: 0 auto;                  /* Center horizontally */
+    padding: 20px;                   /* Inner spacing */
+    flex: 1;                         /* Grow to fill available vertical space */
     display: flex;
-    flex-direction: column;
+    flex-direction: column;          /* Stack content sections vertically */
 }
 
+/*---------------------------------------
+  Logo: prominent title styling
+---------------------------------------*/
 .logo {
-    font-size: 4em;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin: 20px 0;
+    font-size: 4em;                  /* Very large text for emphasis */
+    font-weight: bold;               /* Bold weight for prominence */
+    color: var(--primary-color);     /* Use accent color */
+    margin: 20px 0;                  /* Vertical spacing around logo */
 }
 
+/*---------------------------------------
+  Confirmation Box: message container
+---------------------------------------*/
 .confirmation-box {
-    background-color: var(--bg-light);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-light); /* Light background to stand out */
+    border-radius: 5px;               /* Slightly rounded corners */
+    padding: 20px;                    /* Inner padding */
+    margin-top: 20px;                 /* Space above the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
 }
 
+/*---------------------------------------
+  Call-to-Action Button
+---------------------------------------*/
 .cta-button {
-    display: inline-block;
+    display: inline-block;            /* Fit to content */
     background-color: var(--primary-color);
     color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 20px auto 0;
-    font-size: 16px;
+    padding: 10px 15px;               /* Comfortable click area */
+    text-decoration: none;            /* Remove underline */
+    border-radius: 5px;               /* Rounded corners */
+    margin: 20px auto 0;              /* Center horizontally, space above */
+    font-size: 16px;                  /* Readable text size */
     cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
+    border: none;                     /* No default border */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 .cta-button:hover {
-    background-color: #e63e00;
+    background-color: #e63e00;        /* Darker accent on hover */
 }
 
+/*---------------------------------------
+  Contact Section
+---------------------------------------*/
 .contact-section {
     background-color: var(--bg-light);
-    padding: 30px 0;
+    padding: 30px 0;                  /* Vertical padding */
     width: 100%;
-    margin-top: auto;
+    margin-top: auto;                 /* Push to bottom if parent flex allows */
 }
 
 .contact-section .content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 800px;                 /* Limit width */
+    margin: 0 auto;                   /* Center horizontally */
+    padding: 0 20px;                  /* Horizontal padding */
 }
 
 .contact-section h2 {
     color: var(--text-color);
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    margin-bottom: 15px;              /* Space below heading */
+    font-size: 1.5em;                 /* Larger than default text */
 }
 
 .contact-section p {
-    color: #666;
-    margin: 8px 0;
+    color: #666;                      /* Muted text for secondary info */
+    margin: 8px 0;                    /* Vertical spacing between lines */
 }
 
+/*---------------------------------------
+  Footer
+---------------------------------------*/
 footer {
     background-color: var(--bg-dark);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px;                    /* Inner padding */
     width: 100%;
 }
 
 footer p {
-    margin: 0;
+    margin: 0;                        /* Remove default paragraph margin */
 }
 
+/*---------------------------------------
+  Responsive Adjustments
+---------------------------------------*/
 @media (max-width: 768px) {
     .logo {
-        font-size: 3em;
+        font-size: 3em;               /* Smaller logo on tablets/mobile */
     }
     .content-wrapper {
-        padding: 15px;
+        padding: 15px;                /* Reduce side padding */
     }
     .confirmation-box {
-        padding: 15px;
+        padding: 15px;                /* Smaller box padding */
     }
 }

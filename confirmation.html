@@ -1,40 +1,72 @@
 <!DOCTYPE html>
+<!-- Declare HTML5 document type -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership Confirmation - OneLife Gym</title>
-    <link rel="preload" href="confirmation.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="confirmation.css"></noscript>
-    <link rel="stylesheet" href="confirmation.css">
+  <!-- Character encoding for correct text rendering -->
+  <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title shown in browser tab -->
+  <title>Membership Confirmation - OneLife Gym</title>
+
+  <!-- Preload the CSS for faster first render -->
+  <link rel="preload" href="confirmation.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Fallback for browsers with JavaScript disabled -->
+  <noscript><link rel="stylesheet" href="confirmation.css"></noscript>
+  <!-- Main stylesheet for this page -->
+  <link rel="stylesheet" href="confirmation.css">
 </head>
 <body>
-    <div class="page-container">
-        <div class="content-wrapper">
-            <div class="confirmation-page">
-                <div class="logo">OneLife Gym</div>
-                <h1>Thank You for Your Purchase!</h1>
-                <div class="confirmation-box">
-                    <p>Your membership has been successfully processed.</p>
-                    <p>Please check your email for further details about your membership.</p>
-                    <p><strong>Important:</strong> If you don't receive an email within 24 hours, please contact us at 010-722 02 50.</p>
-                </div>
-                <a href="index.html" class="cta-button">Return to Homepage</a>
-            </div>
 
-            <section class="contact-section">
-                <div class="content">
-                    <h2>Contact Us</h2>
-                    <p>Address: Mineralvägen 29, 691 45 Karlskoga</p>
-                    <p>Phone: 010-722 02 50</p>
-                    <p>Open 24 hours</p>
-                </div>
-            </section>
-            
+  <!-- Container for the entire page to allow flex or grid layouts -->
+  <div class="page-container">
+
+    <!-- Wrapper for central content -->
+    <div class="content-wrapper">
+
+      <!-- Confirmation page main area -->
+      <div class="confirmation-page">
+
+        <!-- Gym logo/title -->
+        <div class="logo">OneLife Gym</div>
+
+        <!-- Main heading thanking the user -->
+        <h1>Thank You for Your Purchase!</h1>
+
+        <!-- Box containing confirmation details and instructions -->
+        <div class="confirmation-box">
+          <!-- Paragraph confirming the purchase -->
+          <p>Your membership has been successfully processed.</p>
+          <!-- Paragraph instructing user to check email -->
+          <p>Please check your email for further details about your membership.</p>
+          <!-- Important note in bold for clarity -->
+          <p><strong>Important:</strong> If you don't receive an email within 24 hours, please contact us at 010-722 02 50.</p>
         </div>
 
-        <footer>
-            <p>&copy; 2025 OneLife Gym. All rights reserved.</p>
-        </footer>
-    </div>
+        <!-- Call-to-action button to return to the homepage -->
+        <a href="index.html" class="cta-button">Return to Homepage</a>
+
+      </div> <!-- End .confirmation-page -->
+
+      <!-- Contact section repeated for user convenience -->
+      <section class="contact-section">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p>Address: Mineralvägen 29, 691 45 Karlskoga</p>
+          <p>Phone: 010-722 02 50</p>
+          <p>Open 24 hours</p>
+        </div>
+      </section>
+
+    </div> <!-- End .content-wrapper -->
+
+    <!-- Site-wide footer -->
+    <footer>
+      <p>&copy; 2025 OneLife Gym. All rights reserved.</p>
+    </footer>
+
+  </div> <!-- End .page-container -->
+
 </body>
+</html>

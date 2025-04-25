@@ -1,17 +1,37 @@
 <!DOCTYPE html>
+<!-- Declares the document type and ensures the page uses HTML5 -->
 <html lang="en">
 <head>
+    <!-- Metadata about the document -->
     <meta charset="UTF-8">
+    <!-- Makes the website responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in the browser tab -->
     <title>OneLife Gym - Membership Plans</title>
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <!-- Overall container for the entire page -->
     <div class="page-container">
+
+        <!-- Empty header element (reserved for potential future content) -->
         <header></header>
+
+        <!-- Logo of the gym -->
         <div class="logo">OneLife Gym</div>
+
+        <!-- Button linking back to the homepage -->
         <a href="index.html" class="home-button">Home</a>
+
+        <!-- Container for displaying different membership plans -->
         <div class="plans-container">
+
+            <!-- Basic Membership Plan Card -->
             <div class="plan-card" data-plan="basic">
                 <h2>Basic Plan</h2>
                 <div class="price">$49<span>/month</span></div>
@@ -20,8 +40,11 @@
                     <li>Locker room access</li>
                     <li>1 free personal training session</li>
                 </ul>
+                <!-- Button that redirects to confirmation page -->
                 <a href="confirmation.html" class="cta-button">Get Pass</a>
             </div>
+
+            <!-- Premium Membership Plan Card -->
             <div class="plan-card" data-plan="premium">
                 <h2>Premium Plan</h2>
                 <div class="price">$99<span>/month</span></div>
@@ -31,8 +54,11 @@
                     <li>3 free personal training sessions</li>
                     <li>Access to group classes</li>
                 </ul>
+                <!-- Button that redirects to confirmation page -->
                 <a href="confirmation.html" class="cta-button">Get Pass</a>
             </div>
+
+            <!-- Day Pass Membership Plan Card -->
             <div class="plan-card" data-plan="vip">
                 <h2>Day Pass</h2>
                 <div class="price">$10<span>/day</span></div>
@@ -41,11 +67,13 @@
                     <li>Locker room access</li>
                     <li>1 sunbed session</li>
                 </ul>
+                <!-- Button that redirects to confirmation page -->
                 <a href="confirmation.html" class="cta-button">Get Pass</a>
             </div>
+
         </div>
 
-        <!-- Contact Section -->
+        <!-- Contact Information Section -->
         <section id="contact-section" class="contact-section">
             <h2>Contact Us</h2>
             <p>Address: Mineralvägen 29, 691 45 Karlskoga</p>
@@ -53,11 +81,12 @@
             <p>Open 24 hours</p>
         </section>
 
-        <!-- Footer -->
+        <!-- Footer with copyright -->
         <footer>
             <p>&copy; 2025 OneLife Gym. All rights reserved.</p>
         </footer>
-    </div>
+
+    </div> <!-- End of page container -->
 
 </body>
 </html>

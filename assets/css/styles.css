@@ -1,93 +1,115 @@
+/*---------------------------------------
+  Root Variables: define key colors
+---------------------------------------*/
 :root {
-    --primary-color: #ff4500;
-    --text-color: #333;
-    --bg-light: #f8f8f8;
-    --bg-dark: #333;
+    --primary-color: #ff4500;  /* Accent color for buttons and highlights */
+    --text-color: #333;        /* Main text color */
+    --bg-light: #f8f8f8;       /* Light background for cards/sections */
+    --bg-dark: #333;           /* Dark background for footer */
 }
 
+/*---------------------------------------
+  Global Reset & Base Layout
+---------------------------------------*/
 html, body {
-    height: 100%;
+    height: 100%;             /* Ensure full height for flex layout */
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    line-height: 1.6;               /* Improved text readability */
     color: var(--text-color);
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-height: 100vh;
+    flex-direction: column;         /* Header-content-footer vertical stack */
+    text-align: center;             /* Center-align text by default */
+    min-height: 100vh;              /* Always fill the viewport height */
 }
 
+/*---------------------------------------
+  Page Container & Content Wrapper
+---------------------------------------*/
 .page-container {
-    flex: 1;
+    flex: 1;                        /* Expand to fill remaining height */
     display: flex;
-    flex-direction: column;
+    flex-direction: column;         /* Stack header, content, footer */
     width: 100%;
 }
 
 .content-wrapper {
-    flex: 1;
+    flex: 1;                        /* Expand to fill vertical space */
     display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    flex-direction: column;         /* Vertical flow for main content */
+    max-width: 800px;               /* Limit content width for readability */
+    margin: 0 auto;                 /* Center horizontally */
+    padding: 20px;                  /* Inner spacing */
     width: 100%;
 }
 
+/*---------------------------------------
+  Logo Styling
+---------------------------------------*/
 .logo {
-    font-size: 4em;
+    font-size: 4em;                 /* Large, prominent title */
     font-weight: bold;
     color: var(--primary-color);
-    margin: 20px 0;
+    margin: 20px 0;                 /* Vertical margin */
 }
 
+/*---------------------------------------
+  Membership Plans Layout
+---------------------------------------*/
 .plans-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 20px;
+    justify-content: center;        /* Center cards horizontally */
+    align-items: center;            /* Center cards vertically */
+    flex-wrap: wrap;                /* Wrap cards on smaller screens */
+    padding: 50px 20px;             /* Section padding */
 }
 
 .plan-card {
     background-color: var(--bg-light);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 30px;
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px;                   /* Space between cards */
+    padding: 30px;                  /* Inner content padding */
     text-align: center;
-    width: 300px;
+    width: 300px;                   /* Fixed card width */
 }
 
 .plan-card h2 {
-    color: var(--text-color);
+    color: var(--text-color);       /* Plan title color */
 }
 
+/* Price Styling */
 .price {
-    font-size: 36px;
-    color: var(--primary-color);
+    font-size: 36px;                /* Large, bold price */
+    color: var(--primary-color);    /* Accent color */
 }
 
+/*---------------------------------------
+  Call-to-Action Button
+---------------------------------------*/
 .cta-button {
     display: inline-block;
     background-color: var(--primary-color);
     color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 10px 15px;             /* Comfortable click area */
+    text-decoration: none;          /* Remove underline */
+    border-radius: 5px;             /* Slightly rounded edges */
+    transition: background-color 0.3s ease; /* Smooth hover */
 }
 
 .cta-button:hover {
-    background-color: #e63e00;
+    background-color: #e63e00;      /* Darker shade on hover */
 }
 
+/*---------------------------------------
+  Home Button (Fixed Position)
+---------------------------------------*/
 .home-button {
-    position: fixed;
+    position: fixed;                /* Stays in viewport corner */
     top: 20px;
     right: 20px;
     background-color: var(--primary-color);
@@ -99,11 +121,14 @@ body {
     cursor: pointer;
 }
 
+/*---------------------------------------
+  Contact Section Styling
+---------------------------------------*/
 .contact-section {
     background-color: var(--bg-light);
-    padding: 30px 20px;
+    padding: 30px 20px;             /* Section padding */
     width: 100%;
-    margin-top: auto;
+    margin-top: auto;               /* Push to bottom if space allows */
 }
 
 .contact-section h2 {
@@ -113,30 +138,36 @@ body {
 }
 
 .contact-section p {
-    color: #666;
-    margin: 8px 0;
+    color: #666;                    /* Muted description color */
+    margin: 8px 0;                  /* Vertical spacing between lines */
 }
 
+/*---------------------------------------
+  Footer Styling
+---------------------------------------*/
 footer {
     background-color: var(--bg-dark);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px;                  /* Footer padding */
     width: 100%;
 }
 
 footer p {
-    margin: 0;
+    margin: 0;                      /* Remove default paragraph margin */
 }
 
+/*---------------------------------------
+  Responsive Adjustments
+---------------------------------------*/
 @media (max-width: 768px) {
     .logo {
-        font-size: 3em;
+        font-size: 3em;             /* Smaller logo on tablet/mobile */
     }
     .content-wrapper {
-        padding: 15px;
+        padding: 15px;              /* Reduce padding on smaller screens */
     }
     .plan-card {
-        padding: 15px;
+        padding: 15px;              /* Tighter card padding */
     }
 }

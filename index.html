@@ -1,11 +1,19 @@
-
 <!DOCTYPE html>
+<!-- Declares the document type and version of HTML (HTML5) -->
 <html lang="en">
 <head>
+    <!-- Metadata configuration for the document -->
     <meta charset="UTF-8">
+    <!-- Ensures responsive behavior on different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links to the external CSS file for styling the page -->
     <link rel="stylesheet" href="body.css">
+
+    <!-- Title that appears in the browser tab -->
     <title>OneLife Gym - Premier Bodybuilding & Sunbed Facility</title>
+
+    <!-- Inline CSS for enabling smooth scrolling when anchor links are clicked -->
     <style>
         html {
             scroll-behavior: smooth;
@@ -13,10 +21,13 @@
     </style>
 </head>
 <body>
+
+    <!-- Header section with navigation bar -->
     <header>
         <nav>
             <div class="logo">OneLife Gym</div>
             <ul>
+                <!-- Navigation menu items linking to sections on the page -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#facilities">Facilities</a></li>
@@ -26,7 +37,9 @@
         </nav>
     </header>
 
+    <!-- Main content of the website -->
     <main>
+        <!-- Hero section with promotional message and call-to-action button -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Build Your Dream Body at OneLife Gym</h1>
@@ -35,11 +48,13 @@
             </div>
         </section>
 
+        <!-- About section describing the gym’s purpose -->
         <section id="about">
             <h2>About OneLife Gym</h2>
             <p>OneLife Gym is dedicated to helping you achieve your ultimate physique. Our state-of-the-art facility offers the latest in bodybuilding equipment and premium sunbed services. Whether you're a beginner or a seasoned bodybuilder, we have everything you need to transform your body and boost your confidence.</p>
         </section>
 
+        <!-- Facilities section showcasing gym features -->
         <section id="facilities">
             <h2>Our Facilities</h2>
             <div class="features">
@@ -58,9 +73,11 @@
             </div>
         </section>
 
+        <!-- Gallery section with images from the gym -->
         <section id="gallery">
             <h2>Gym Gallery</h2>
             <div class="gallery">
+                <!-- Unsplash-hosted images for visual appeal -->
                 <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gym equipment">
                 <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bodybuilder working out">
                 <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sunbed">
@@ -68,9 +85,11 @@
             </div>
         </section>
 
+        <!-- Pricing section with 3 different membership plans -->
         <section id="pricing">
             <h2>Membership Options</h2>
             <div class="pricing">
+                <!-- Basic Plan -->
                 <div class="price-card">
                     <h3>Basic</h3>
                     <p class="price">$49/month</p>
@@ -81,6 +100,8 @@
                     </ul>
                     <a href="./plan.html" class="cta-button">Get Pass</a>
                 </div>
+
+                <!-- Premium Plan -->
                 <div class="price-card">
                     <h3>Premium</h3>
                     <p class="price">$99/month</p>
@@ -92,6 +113,8 @@
                     </ul>
                     <a href="./plan.html" class="cta-button">Get Pass</a>
                 </div>
+
+                <!-- Day Pass -->
                 <div class="price-card">
                     <h3>Day Pass</h3>
                     <p class="price">$10</p>
@@ -100,11 +123,12 @@
                         <li>Locker room access</li>
                         <li>1 sunbed session</li>
                     </ul>
-                    <a href = "./plan.html" class = "cta-button">Get Pass</a>
+                    <a href="./plan.html" class="cta-button">Get Pass</a>
                 </div>
             </div>
         </section>
 
+        <!-- Contact section with physical address and phone number -->
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
             <p>Address: Mineralvägen 29, 691 45 Karlskoga</p>
@@ -112,6 +136,8 @@
             <p>Open 24 hours</p>
         </section>
     </main>
+
+    <!-- JavaScript for smooth scrolling between internal page links -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
@@ -122,10 +148,12 @@
             }
           });
         });
-      </script>
+    </script>
+
+    <!-- Footer with copyright -->
     <footer>
         <p>&copy; 2025 OneLife Gym. All rights reserved.</p>
     </footer>
-    
+
 </body>
 </html>
