@@ -77,6 +77,27 @@ The purpose is to build a static, informative website showcasing gym facilities 
 └── README.md                 # Project overview and documentation
 ```
 
+---
+
+## 🧩 Wireframes
+
+These wireframes were created during the planning phase to map out the layout, content hierarchy, and user flow for each key page.
+
+### Homepage Wireframes
+
+![Homepage Wireframe 1](./assets/wireframes/homepage%201.png)  
+![Homepage Wireframe 2](./assets/wireframes/homepage%202.png)  
+![Homepage Wireframe 3](./assets/wireframes/homepage%203.png)  
+
+### Plans Page Wireframe
+
+![Plans Page Wireframe](./assets/wireframes/plans%20page.png)  
+
+### Confirmation Page Wireframe
+
+![Confirmation Page Wireframe](./assets/wireframes/confirmation%20page.png)  
+
+> You can find all source wireframe files in the `assets/wireframes/` folder.
 
 ---
 
