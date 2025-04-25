@@ -1,56 +1,81 @@
-# OneLife Gym - Premier Bodybuilding & Sunbed Facility
+# 🏋️ OneLife Gym – Premier Bodybuilding & Sunbed Facility
 
-Welcome to OneLife Gym! Our state-of-the-art facility is designed to help you achieve your ultimate physique. With top-notch bodybuilding equipment and premium sunbed services, we're here to support your fitness journey.
+Welcome to **OneLife Gym** — a clean, responsive, and accessible static website designed to present a modern gym and sunbed experience for users.
 
-## Website Overview
+---
 
-The OneLife Gym website provides information about our gym, membership options, facilities, and contact details. It also allows users to choose from different membership plans and confirms their purchase.
+## 🎯 Project Purpose
 
-### Key Sections
+This project was built as part of the User-Centric Frontend Development milestone. The purpose is to present structured information about a gym in a user-friendly and visually appealing format that meets user needs and the site owner's business goals.
 
-1. **Home** - Introduction to OneLife Gym, showcasing its vision and calling users to join.
-2. **About** - Information about our gym's mission and what makes OneLife Gym the best choice for fitness.
-3. **Facilities** - A description of the facilities available, including bodybuilding equipment, sunbeds, and professional trainers.
-4. **Gallery** - A visual showcase of the gym's equipment, bodybuilders working out, and sunbed features.
-5. **Pricing** - Information about our membership plans including the Basic, Premium, and Day Pass options.
-6. **Contact** - Contact details for inquiries and more information about our gym.
-7. **Membership Confirmation** - A page confirming successful membership purchases with next steps.
+---
 
-### Membership Plans
+## 👥 User Stories
 
-- **Basic Plan** - $49/month: Full gym access, locker room access, and 1 free personal training session.
-- **Premium Plan** - $99/month: Full gym access, unlimited sunbed use, 3 free personal training sessions, and access to group classes.
-- **Day Pass** - $10: Full gym access for one day, locker room access, and 1 sunbed session.
+- *As a new visitor*, I want to quickly understand the gym’s offerings and prices.
+- *As a returning member*, I want to check updated pricing or facility info.
+- *As someone interested in signing up*, I want an easy path to get a membership confirmation.
 
-### Setup
+---
 
-To set up the website locally, follow these steps:
+## 🌟 Goals of the Website
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Takedown-code/OneLife-Gym.git
-    ```
-   
-2. Navigate to the project folder:
-    ```bash
-    cd OneLife-Gym
-    ```
+- Present facilities and pricing clearly
+- Provide intuitive navigation and responsive design
+- Encourage user signups via clear call-to-action buttons
+- Reinforce professionalism through layout, structure, and imagery
 
-3. Open the `index.html` file in a browser to view the homepage.
+---
 
-### Files Included
+## 📌 Features
 
-- **index.html** - The main landing page for OneLife Gym.
-- **plan.html** - The page detailing membership plans.
-- **confirmation.html** - The confirmation page after membership purchase.
-- **body.css** - The CSS styles for the gym's landing page.
-- **styles.css** - The CSS styles for the membership plans page.
-- **confirmation.css** - The CSS styles for the confirmation page.
+### ✅ Current Features
+- Hero banner with CTA
+- About and facilities sections
+- Visual gallery (Unsplash image links)
+- 3-tier pricing section with working links
+- Contact section with address and phone number
+- Confirmation page after selecting a plan
 
-### AI
+### 🚀 Future Improvements
+- Form to collect user emails during signup
+- Embedded Google Maps location
+- Dark mode toggle
+- FAQ section
 
-Used for feedback, problem solving and structuring
+---
 
-### Author
+## 🧪 Testing
 
-Robin Tagner
+### ✅ Tested On:
+- Chrome, Firefox, Safari, Edge (all latest versions)
+- Mobile, tablet, and desktop breakpoints
+
+### 🧾 Manual Test Cases:
+- All navigation links scroll or redirect properly ✅  
+- “Get Pass” links take user to the plan confirmation ✅  
+- Page reflows responsively at <768px and <480px ✅  
+- Buttons, links, and hover states all function as expected ✅
+
+### ✅ Validated:
+- HTML5 – via W3C Validator
+- CSS – via Jigsaw CSS Validator
+
+---
+
+## 🚚 Deployment
+
+This project is deployed via **GitHub Pages**:
+
+🔗 [Live Site](https://takedown-code.github.io/Climate-Data-Explorer/)
+
+To deploy:
+1. Push code to the `main` branch
+2. Go to GitHub > Settings > Pages
+3. Set source to `main` branch and folder `/ (root)`
+4. Save → your site goes live in seconds
+
+---
+
+## 📁 Directory Structure
+
